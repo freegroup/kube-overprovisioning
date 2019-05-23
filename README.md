@@ -4,6 +4,7 @@ This tutorial describes how to overprovisioning of cluster nodes for scaling and
 when you have work loads that need to scale up quickly without waiting for the new cluster nodes to be created 
 and join the cluster.
 
+![teaser](images/teaser.png)
 A similar problem occurs when crashing a node from the Hyperscaler. This must be replaced by Kubernetes as fast 
 as possible. The solution can be **overprovisioning** of nodes
 
