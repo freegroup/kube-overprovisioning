@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: low-priority
+  labels:
+    app: low-priority
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: low-priority
+  template:
+    metadata:
+      labels:
+        app: low-priority
+    spec:
+      containers:
+      - image: bash:4.4
+        name: test-container
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo $(date); sleep 1;done"]
+        resources:
+          requests:
+            memory: "6000Mi"
+            cpu: "250m"
+      priorityClassName: low-priority
+
