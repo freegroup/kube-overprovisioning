@@ -43,7 +43,7 @@ The test results for the different IaaS provider are shown below.
 The results provided should only show how long the downtimes can be approximately.
 > *The downtime results could vary +- 1 min, because the minimum request interval in UpTime is 1 minute*  
 
-## <img src="images/logos/aws.png"  style="display: inline-block;margin: 0;" width="47" height="23"> AWS
+## <img src="images/logos/aws.png"  style="display: inline-block;margin: 0;" height="25"> AWS
 
 ### Normal
 ![chart](./images/result/normal/aws.png)
@@ -51,21 +51,21 @@ The results provided should only show how long the downtimes can be approximatel
 ### Overprovisioning
 ![chart](./images/result/overprovision/aws.png)
 
-## Azure <img src="./images/logos/azure.png" width="25" height="22">
+## <img src="./images/logos/azure.png"  style="display: inline-block;margin: 0;" height="25"> AZURE
 ### Normal
 ![chart](./images/result/normal/azure.png)
 
 ### Overprovisioning
 ![chart](./images/result/overprovision/azure.png)
 
-## GCP <img src="https://ih1.redbubble.net/image.545419562.4246/flat,550x550,075,f.u1.jpg" width="25" height="20">
+## <img src="https://ih1.redbubble.net/image.545419562.4246/flat,550x550,075,f.u1.jpg"  style="display: inline-block;margin: 0;" height="25"> GCP
 ### Normal
 ![chart](./images/result/normal/gcp.png)
 
 ### Overprovisioning
 ![chart](./images/result/overprovision/gcp.png)
 
-## AliCloud <img src="./images/logos/alicloud.svg" width="25" height="18">
+## <img src="./images/logos/alicloud.svg"  style="display: inline-block;margin: 0;" height="25"> AliCloud
 ### Normal
 ![chart](./images/result/normal/alicloud.png)
 
