@@ -1,4 +1,5 @@
-# Cluster overprovisioner
+# Cluster Overprovisioning
+
 This tutorial describes how to overprovisioning of cluster nodes for scaling and failover. This is desired 
 when you have work loads that need to scale up quickly without waiting for the new cluster nodes to be created 
 and join the cluster.
@@ -44,31 +45,31 @@ The results provided should only show how long the downtimes can be approximatel
 
 ## AWS <img src="./images/logos/aws.png" width="47" height="23">
 
-#### Normal
+### Normal
 ![](./images/result/normal/aws.png)
 
-#### Overprovisioning
+### Overprovisioning
 ![](./images/result/overprovision/aws.png)
 
 ## Azure <img src="./images/logos/azure.png" width="25" height="22">
-#### Normal
+### Normal
 ![](./images/result/normal/azure.png)
 
-#### Overprovisioning
+### Overprovisioning
 ![](./images/result/overprovision/azure.png)
 
 ## GCP <img src="https://ih1.redbubble.net/image.545419562.4246/flat,550x550,075,f.u1.jpg" width="25" height="20">
-#### Normal
+### Normal
 ![](./images/result/normal/gcp.png)
 
-#### Overprovisioning
+### Overprovisioning
 ![](./images/result/overprovision/gcp.png)
 
 ## AliCloud <img src="./images/logos/alicloud.svg" width="25" height="18">
-#### Normal
+### Normal
 ![](./images/result/normal/alicloud.png)
 
-#### Overprovisioning
+### Overprovisioning
 ![](./images/result/overprovision/alicloud.png)
 
 
