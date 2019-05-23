@@ -59,7 +59,7 @@ The results provided should only show how long the downtimes can be approximatel
 ### Overprovisioning
 ![chart](./images/result/overprovision/azure.png)
 
-## <img src="https://ih1.redbubble.net/image.545419562.4246/flat,550x550,075,f.u1.jpg" class="inline" style="display: inline-block;margin:0;height:30px"> GCP
+## <img src="images/logos/gcp.png" class="inline" style="display: inline-block;margin:0;height:30px"> GCP
 ### Normal
 ![chart](./images/result/normal/gcp.png)
 
