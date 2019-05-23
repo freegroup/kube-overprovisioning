@@ -43,7 +43,7 @@ The test results for the different IaaS provider are shown below.
 The results provided should only show how long the downtimes can be approximately.
 > *The downtime results could vary +- 1 min, because the minimum request interval in UpTime is 1 minute*  
 
-## AWS <img src="./images/logos/aws.png" width="47" height="23">
+## <img src="images/logos/aws.png"  style="display: inline-block;margin: 0;" width="47" height="23"> AWS
 
 ### Normal
 ![chart](./images/result/normal/aws.png)
