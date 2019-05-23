@@ -52,7 +52,7 @@ The results provided should only show how long the downtimes can be approximatel
 ### Overprovisioning
 ![chart](./images/result/overprovision/aws.png)
 
-## <img src="./images/logos/azure.png"  style="display: inline-block;margin: 0;" height="25"> AZURE
+## <img src="images/logos/azure.png"  style="display: inline-block;margin: 0;" height="25"> AZURE
 ### Normal
 ![chart](./images/result/normal/azure.png)
 
@@ -66,7 +66,7 @@ The results provided should only show how long the downtimes can be approximatel
 ### Overprovisioning
 ![chart](./images/result/overprovision/gcp.png)
 
-## <img src="./images/logos/alicloud.svg"  style="display: inline-block;margin: 0;" height="25"> AliCloud
+## <img src="images/logos/alicloud.png"  style="display: inline-block;margin: 0;" height="25"> AliCloud
 ### Normal
 ![chart](./images/result/normal/alicloud.png)
 
