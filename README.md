@@ -44,7 +44,7 @@ The test results for the different IaaS provider are shown below.
 The results provided should only show how long the downtimes can be approximately.
 > *The downtime results could vary +- 1 min, because the minimum request interval in UpTime is 1 minute*  
 
-## <img src="images/logos/aws.png" class="inline" style="display: inline-block;margin:0;height:30px"> AWS
+## <img src="images/logos/aws.png" class="inline" style="display: inline-block;margin:0;height:30px"> Amazon
 
 ### Normal
 ![chart](./images/result/normal/aws.png)
@@ -52,7 +52,7 @@ The results provided should only show how long the downtimes can be approximatel
 ### Overprovisioning
 ![chart](./images/result/overprovision/aws.png)
 
-## <img src="images/logos/azure.png" class="inline" style="display: inline-block;margin:0;height:30px"> AZURE
+## <img src="images/logos/azure.png" class="inline" style="display: inline-block;margin:0;height:30px"> Azure
 ### Normal
 ![chart](./images/result/normal/azure.png)
 
