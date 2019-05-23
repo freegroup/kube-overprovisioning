@@ -73,7 +73,7 @@ The results provided should only show how long the downtimes can be approximatel
 ![](./images/result/overprovision/alicloud.png)
 
 
-## Comparison
+## Summary of results
 
 ### Normal
 
@@ -91,40 +91,25 @@ The results provided should only show how long the downtimes can be approximatel
 | Pod rescheduled  | 14:22     | 06:02     | 06:06     | 08:25     |
 | **Downtime**     | 2 min     | 2 min     | 1 min     | 2 min     |
 
-## Test description
-### Test 1 - Single-Node
-In our first test case we have a cluster on any provider with the cluster-configuration: min. 1 and max. 3 nodes, 
-so we have 1 running node in it. We have deployed a nginx web server, a service and an ingress to expose it. So we 
-are able to call our endpoint with external tools like UpTime to check the availability of our nginx. It takes only 
-a few seconds to deploy your nginx web server on kubernetes, so we could say: when your endpoint works, your node 
-is up and running.
+## Test Description
+We deployed a nginx web server and a service of type LoadBalancer to expose it. So we are able to call our 
+endpoint with external tools like UpTime to check the availability of our nginx. It takes only a few seconds 
+to deploy a nginx web server on kubernetes, so we could say: when your endpoint works, your node is up and running.
 
 We wanted to test how much time it takes, when your node gets killed and your cluster has to create a new one to run 
-your application on it. In our case we have a nginx web server running.  
+your application on it.
+
+``` 
+kubectl get nodes
+
+# select the node where your nginx is running on
+kubectl delete node <NGINX-HOSTED-NODE>
+```
 
 The downtime is tested with UpTime, which does every minute a request to our endpoint. Further we checked manually, 
 if the node startup time and the timestamps on UpTime are almost similar.  
 
-For more information about the test steps have a look into the [tests/01-single-node-test](/tests/01-single-node-test) folder.
-
-### Test 2 - Overprovisioning
-Because the downtimes of the first tests were too long, we wanted to try overprovisioning. We had the idea, that we 
-deploy a simple bash-pod with a low priority, which requests so much memory that it can't run on the same node with 
-the nginx and your cluster has to create a second node to run it. The difference in our second test case is, that we 
-have deployed priority classes and assigned them to the corresponding pods and have 2 running nodes instead of 1.  
-
-> *Keep in mind, that the 2nd node is created automatically by the cluster-autoscaler and not manually*  
-
-So what happens when your node, on which your nginx web server is running, gets deleted?  
-The pod with the lower priority running on the other node will be terminated and your nginx pod with a higher 
-priority will be deployed on that node.
-
-We wanted to know how long it takes that your nginx web server is running again, when the node, on which your 
-nginx is running, gets deleted.  
-
-For more information about the test steps have a look into the [tests/02-overprovisioning-test](/tests/02-overprovisioning-test) folder.
-
-
-
+Next, deploy the **overprovisioned** version of our demo application and kill the node with the NGINX.
+As you can see - the pod comes up very fast and can serve content again.
 
 
