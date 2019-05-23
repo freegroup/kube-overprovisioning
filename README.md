@@ -46,31 +46,31 @@ The results provided should only show how long the downtimes can be approximatel
 ## AWS <img src="./images/logos/aws.png" width="47" height="23">
 
 ### Normal
-![](./images/result/normal/aws.png)
+![chart](./images/result/normal/aws.png)
 
 ### Overprovisioning
-![](./images/result/overprovision/aws.png)
+![chart](./images/result/overprovision/aws.png)
 
 ## Azure <img src="./images/logos/azure.png" width="25" height="22">
 ### Normal
-![](./images/result/normal/azure.png)
+![chart](./images/result/normal/azure.png)
 
 ### Overprovisioning
-![](./images/result/overprovision/azure.png)
+![chart](./images/result/overprovision/azure.png)
 
 ## GCP <img src="https://ih1.redbubble.net/image.545419562.4246/flat,550x550,075,f.u1.jpg" width="25" height="20">
 ### Normal
-![](./images/result/normal/gcp.png)
+![chart](./images/result/normal/gcp.png)
 
 ### Overprovisioning
-![](./images/result/overprovision/gcp.png)
+![chart](./images/result/overprovision/gcp.png)
 
 ## AliCloud <img src="./images/logos/alicloud.svg" width="25" height="18">
 ### Normal
-![](./images/result/normal/alicloud.png)
+![chart](./images/result/normal/alicloud.png)
 
 ### Overprovisioning
-![](./images/result/overprovision/alicloud.png)
+![chart](./images/result/overprovision/alicloud.png)
 
 
 ## Summary of results
