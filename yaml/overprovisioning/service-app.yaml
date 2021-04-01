@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-svc
+  name: echoserver-svc
   labels:
-    app: nginx
+    app: echoserver
 spec:
   ports:
-  - port: 80
-    protocol: TCP
-    targetPort: 80
+    - port: 80
+      protocol: TCP
+      targetPort: 8080
   selector:
-    app: nginx
+    app: echoserver
   type: LoadBalancer
